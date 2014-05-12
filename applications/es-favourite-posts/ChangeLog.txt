@@ -1,0 +1,132 @@
+------------------
+ES Favorite Posts - ChangeLog
+
+------------------
+
+***********Features************
+
+
+
+*************How to use**********
+
+1) Create a Template page in your Eshopbox folder inside Theme with defined template and including header and footer(ex-Wishlist.php)
+
+<?php
+/*
+*template name: wishlist
+*/
+
+get_header('shop');?>
+
+<?php get_footer('shop');
+?>
+
+2)To get this page displayed or visible on your site go to ADMIN panel and create a page and from template option choose the template Wishlist
+name the page as u want(like mywish.php) here.
+
+3)to get this page worked a s your wishlist page add the following lines of code to your page
+
+<?php
+$file=$_SERVER['DOCUMENT_ROOT'].'/eshopboxcontent/plugins/wp-favorite-posts/wpfp-widgets.php';
+if(file_exists($file))
+{
+    include_once $file;
+}
+$array=array();
+
+wpfp_users_favorites_widget_function($array);
+
+
+
+?>
+4)the functionality is ready u can view your wishes on the page and can remove it and can visit the detail page to add it to your cart.
+
+5)Use this code to call it on detail page
+<span class="dynamicwishlist">
+
+	<a class="saveforlater" href="#">
+
+		<span class="staricon"></span>
+
+			<?php
+
+				if(function_exists(wpfp_link)){
+
+				wpfp_link();
+			}?>
+	</a>
+
+</span>
+6)use this code to call it on listing page
+
+<div class="wishlist">
+	<?php wpfp_link(); ?>
+</div>
+
+7)Use to cade to add move to wishlist on cart page
+ Go To themes->Eshopbox->cart->cart.php
+
+
+<div class="movetowishlist_block">
+
+	<?php   
+		$_SESSION['post_id']=$_product->post->ID; 
+		$_SESSION['cart_key']=$cart_item_key;
+		wpfp_link();			   
+	?>
+</div>
+
+8) code to add wishlist count on my account page
+
+$favorite_post_ids = wpfp_get_users_favorites();
+$wishlist_count=count($favorite_post_ids);
+
+<div id="wishlist_block">
+	<div class="wishlist_headingblock">
+	<h2>My Wishlist</h2>
+	<a href="/mywishlist">View</a>
+	</div>
+	<table>
+		<td><p>You have  <?php  echo $wishlist_count;?> items in your wishlist.
+		uy them by moving to your Shopping Cart.</p>
+		</td>
+	</table>
+</div>
+
+9)there are two files inside this plugin 
+wishlist_for_table_view.php -  gives tabular view of wishlist page
+wishlist_for_listing_view.php-   gives listing view of wishlist page
+
+So,as per the requirements just copy and paste the code of the required file in  wpfp-your-favs-widget.php file
+
+******Versioning*********
+
+Version 1.6
+
+Count of wishlist item added on my account page
+
+
+Version 1.5
+A bug resolved with added functionality i.e. when a product is out of stock on wishlist page cannot be added to cart with message displayed dynamically "Out
+Of Stock"
+
+Version 1.4
+Move to wishlist button added on cart page
+
+
+Version 1.3
+Move to cart button added on wishlist page
+
+Version 1.2
+Ui added for listing page with wishlist message on hover in baloon form(ref: sabhyata.co.in)
+
+Version 1.1
+Ui added in form of different images before adding to wishlist and after adding to wishlist(like a filled and empty heart)(ref: sabhyata.co.in)
+
+Version 1.0
+First release
+
+
+
+
+

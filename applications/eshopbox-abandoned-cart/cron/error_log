@@ -1,0 +1,7 @@
+[09-Nov-2013 14:10:42 Asia/Kolkata] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[09-Nov-2013 14:11:24 Asia/Kolkata] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[09-Nov-2013 14:11:26 Asia/Kolkata] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[09-Nov-2013 14:12:24 Asia/Kolkata] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[09-Nov-2013 08:42:24 UTC] PHP Fatal error:  Call to undefined function woocommerce_get_template() in /home/dudethin/public_html/eshop-frontent/themes/twentyeleven/eshopbox/emails/admin-abondoned-cart.php on line 12
+[09-Nov-2013 14:17:03 Asia/Kolkata] PHP Warning:  Cannot load module 'XCache' because conflicting module 'eAccelerator' is already loaded in Unknown on line 0
+[09-Nov-2013 08:47:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/dudethin/public_html/eshop-frontent/themes/twentyeleven/eshopbox/emails/admin-abondoned-cart.php on line 53

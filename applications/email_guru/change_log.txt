@@ -1,0 +1,22 @@
+* ChangeLog 
+
+= Version 1.3  =
+a bug resolved and tested i.e. now able to include header and footer of  all custom emails(now no need to paste header and footer of each site in custom email templates).   
+
+
+= Version 1.2  =
+a bug resolved i.e. Abondoned cart emails are going even if the cart page gets refreshed without any change
+so,now the abondoned cart emails are going only and only if there are some changes in the cart by the user
+
+= Version 1.1  =
+user interface added inside Commerce Suite/setting/emails
+new order emails send to eshopbox email also
+
+= Version 1.0  =
+First release of Eshop email guru
+
+
+* Functional dependency on Commerce Suite(yet to be resolved)
+
+Unable to call header and footer via Commerce Suite hook.
+Unable to add send shipment sms and mail link in order action dropdown through hook

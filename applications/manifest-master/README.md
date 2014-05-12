@@ -1,0 +1,4 @@
+manifest
+========
+
+create woocommerce manifest

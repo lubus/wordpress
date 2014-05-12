@@ -1,0 +1,2 @@
+[09-Sep-2013 20:10:00 Asia/Calcutta] PHP Fatal error:  Call to undefined function add_filter() in /home/gipsyonl/public_html/eshopbox-gipsy/applications/eshopbox-abandoned-cart/woo-includes/woo-functions.php on line 57
+[21-Sep-2013 23:05:11 Asia/Calcutta] PHP Fatal error:  Call to undefined function add_filter() in /home/gipsyonl/public_html/eshopbox-gipsy/applications/eshopbox-abandoned-cart/woo-includes/woo-functions.php on line 57
